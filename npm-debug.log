@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.6.1/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.6.1/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'parseTime',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.1
+4 verbose install initial load of /home/ubuntu/workspace/timestamp-api/package.json
+5 warn package.json timestamp-api@1.0.0 No description
+6 warn package.json timestamp-api@1.0.0 No repository field.
+7 warn package.json timestamp-api@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/timestamp-api/node_modules/express/package.json
+9 verbose readDependencies loading dependencies from /home/ubuntu/workspace/timestamp-api/package.json
+10 silly cache add args [ 'parseTime', null ]
+11 verbose cache add spec parseTime
+12 silly cache add parsed spec Result {
+12 silly cache add   raw: 'parseTime',
+12 silly cache add   scope: null,
+12 silly cache add   name: 'parseTime',
+12 silly cache add   rawSpec: '',
+12 silly cache add   spec: 'latest',
+12 silly cache add   type: 'tag' }
+13 silly addNamed parseTime@latest
+14 verbose addNamed "latest" is being treated as a dist-tag for parseTime
+15 info addNameTag [ 'parseTime', 'latest' ]
+16 silly mapToRegistry name parseTime
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry data Result {
+19 silly mapToRegistry   raw: 'parseTime',
+19 silly mapToRegistry   scope: null,
+19 silly mapToRegistry   name: 'parseTime',
+19 silly mapToRegistry   rawSpec: '',
+19 silly mapToRegistry   spec: 'latest',
+19 silly mapToRegistry   type: 'tag' }
+20 silly mapToRegistry uri https://registry.npmjs.org/parseTime
+21 verbose addNameTag registry:https://registry.npmjs.org/parseTime not in flight; fetching
+22 verbose request uri https://registry.npmjs.org/parseTime
+23 verbose request no auth needed
+24 info attempt registry request try #1 at 11:25:11 AM
+25 verbose request id 934472caf85e1e0f
+26 http request GET https://registry.npmjs.org/parseTime
+27 http 404 https://registry.npmjs.org/parseTime
+28 verbose headers { 'content-type': 'application/json',
+28 verbose headers   'cache-control': 'max-age=0',
+28 verbose headers   'content-length': '2',
+28 verbose headers   'accept-ranges': 'bytes',
+28 verbose headers   date: 'Thu, 23 Feb 2017 11:25:12 GMT',
+28 verbose headers   via: '1.1 varnish',
+28 verbose headers   age: '0',
+28 verbose headers   connection: 'keep-alive',
+28 verbose headers   'x-served-by': 'cache-lcy1151-LCY',
+28 verbose headers   'x-cache': 'MISS',
+28 verbose headers   'x-cache-hits': '0',
+28 verbose headers   'x-timer': 'S1487849111.806341,VS0,VE695',
+28 verbose headers   vary: 'Accept-Encoding' }
+29 silly get cb [ 404,
+29 silly get   { 'content-type': 'application/json',
+29 silly get     'cache-control': 'max-age=0',
+29 silly get     'content-length': '2',
+29 silly get     'accept-ranges': 'bytes',
+29 silly get     date: 'Thu, 23 Feb 2017 11:25:12 GMT',
+29 silly get     via: '1.1 varnish',
+29 silly get     age: '0',
+29 silly get     connection: 'keep-alive',
+29 silly get     'x-served-by': 'cache-lcy1151-LCY',
+29 silly get     'x-cache': 'MISS',
+29 silly get     'x-cache-hits': '0',
+29 silly get     'x-timer': 'S1487849111.806341,VS0,VE695',
+29 silly get     vary: 'Accept-Encoding' } ]
+30 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/parseTime
+30 verbose stack     at makeError (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+30 verbose stack     at CachingRegistryClient.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+30 verbose stack     at Request._callback (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+30 verbose stack     at Request.self.callback (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/request/request.js:200:22)
+30 verbose stack     at emitTwo (events.js:87:13)
+30 verbose stack     at Request.emit (events.js:172:7)
+30 verbose stack     at Request.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+30 verbose stack     at emitOne (events.js:82:20)
+30 verbose stack     at Request.emit (events.js:169:7)
+30 verbose stack     at IncomingMessage.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/request/request.js:988:12)
+31 verbose statusCode 404
+32 verbose pkgid parseTime
+33 verbose cwd /home/ubuntu/workspace/timestamp-api
+34 error Linux 4.8.8-c9
+35 error argv "/home/ubuntu/.nvm/versions/node/v4.6.1/bin/node" "/home/ubuntu/.nvm/versions/node/v4.6.1/bin/npm" "install" "parseTime" "--save"
+36 error node v4.6.1
+37 error npm  v2.15.9
+38 error code E404
+39 error 404 Registry returned 404 for GET on https://registry.npmjs.org/parseTime
+39 error 404
+39 error 404 'parseTime' is not in the npm registry.
+39 error 404 Your package name is not valid, because
+39 error 404
+39 error 404  1. name can no longer contain capital letters
+39 error 404 It was specified as a dependency of 'timestamp-api'
+39 error 404
+39 error 404 Note that you can also install from a
+39 error 404 tarball, folder, http url, or git url.
+40 verbose exit [ 1, true ]
