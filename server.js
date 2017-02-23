@@ -11,6 +11,6 @@ app.get('/:param', function(req, res) {
     res.send(object);
 });
 
-app.listen(8080, function() {
+app.listen(process.env.PORT || 8080, function() {
     console.log('Listening on port 8080');
 });
