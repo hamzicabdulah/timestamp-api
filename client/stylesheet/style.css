@@ -18,8 +18,10 @@ a {
 }
 @media screen and (min-width: 768px) {
     .examples {
-        margin: 1em 2% 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+    }
+    .examples > div:first-child {
+        margin-right: 4%;
     }
 }
