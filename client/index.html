@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Timestamp Microservice</title>
+        <meta name="author" content="Abdulah Hamzic">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif|Russo+One" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="stylesheet/style.css">    
+    </head>
+    <body>
+        <h1 class="header">
+            Timestamp Microservice
+        </h1>
+        <h3>Usage:</h3>
+        You can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).<br>
+        If it does, it returns both the Unix timestamp and the natural language form of that date.<br>
+        If it does not contain a date or Unix timestamp, it returns null for those properties.
+        <div class="examples">
+            <div>
+                <h3>Example usage:</h3>
+                <code><a target="_blank" href="https://timestamp-ms.herokuapp.com/December%2015,%202015">https://timestamp-ms.herokuapp.com/December%2015,%202015</a></code><br>
+                <code><a target="_blank" href="https://timestamp-ms.herokuapp.com/1450137600">https://timestamp-ms.herokuapp.com/1450137600</a></code>
+            </div>
+            <div>
+                <h3>Example output:</h3>
+                <code>
+                    {"unix": 1450137600, "natural": "December 15, 2015"}
+                </code>
+            </div>
+        </div>
+    </body>
+</html>
