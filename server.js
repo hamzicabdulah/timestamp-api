@@ -11,6 +11,10 @@ app.get('/:param', function(req, res) {
     res.send(object);
 });
 
+app.get('/:anything', function (req, res) {
+    res.redirect('/');
+});
+
 app.use(express.static(__dirname + '/public'));
 
 app.listen(process.env.PORT || 8080, function() {
