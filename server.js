@@ -15,7 +15,7 @@ app.get('/:anything', function (req, res) {
     res.redirect('/');
 });
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/client'));
 
 app.listen(process.env.PORT || 8080, function() {
     console.log('Listening on port 8080');
